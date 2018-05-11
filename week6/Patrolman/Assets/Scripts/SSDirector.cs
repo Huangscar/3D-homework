@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SSDirector : System.Object
 {
-    private static SSDirector _instance;             //导演类的实例
+    private static SSDirector _instance;             
     public ISceneController CurrentScenceController { get; set; }
     public static SSDirector GetInstance()
     {

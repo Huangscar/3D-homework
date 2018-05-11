@@ -6,7 +6,6 @@ using UnityEngine;
 public enum SSAtionEventType : int {STARTED, COMPLETED}
 public interface ISceneController
 {
-    //加载场景资源
     void LoadResources();
 }
 

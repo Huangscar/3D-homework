@@ -41,14 +41,12 @@ public class FirstController : MonoBehaviour, Observer, ISceneController {
 			patrol.name = "Patrol" + (i + 1);
 		}
 		
-		/*offset =  player.transform.position - main_camera.transform.position;
-		distance = offset.magnitude;*/
+		
 		main_camera.transform.parent = player.transform;
 	}
 
 	public void notified(ActorState actorState, int pos, GameObject gameObject) {
 		if(actorState == ActorState.ENTER_AREA) {
-			//Debug.Log("add 1");
 			scoreRecorder.addScore(1);
 		}
 		else {

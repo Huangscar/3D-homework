@@ -9,6 +9,7 @@ public class UIController{
 
 	public void loseGame() {
 		centerText.text = "LOSE!";
+		centerText.color = Color.red;
 	}
 
 	public void resetGame() {
